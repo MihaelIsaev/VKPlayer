@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "SPMediaKeyTap.h"
+
+static AppDelegate *sharedInstance;
 
 @implementation AppDelegate
 
@@ -14,9 +17,28 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
 
+-(id)init{
+    if(sharedInstance){
+        NSLog(@"Error: You are creating a second AppDelegate. Bad Mihael");
+    }
+    sharedInstance = self;
+    [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                             [SPMediaKeyTap defaultMediaKeyUserBundleIdentifiers], kMediaKeyUsingBundleIdentifiersDefaultsKey,
+                                                             nil]];
+    return self;
+}
+
++(AppDelegate*)sharedInstance{
+    return sharedInstance;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+}
+
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification{
+    return YES;
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.mihaelisaev.vkplayer.VK_Player" in the user's Application Support directory.
@@ -178,6 +200,17 @@
     }
 
     return NSTerminateNow;
+}
+
+-(NSString*)retrieveString:(NSString*)key
+{
+    NSString* recoveredString = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+    return recoveredString;
+}
+
+-(void)saveString:(NSString*)value:(NSString*)key
+{
+    [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
 }
 
 @end

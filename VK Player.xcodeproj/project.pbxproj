@@ -14,6 +14,28 @@
 		47686F451618FECB000C6FF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47686F441618FECB000C6FF5 /* AppDelegate.m */; };
 		47686F481618FECC000C6FF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47686F461618FECC000C6FF5 /* MainMenu.xib */; };
 		47686F4B1618FECC000C6FF5 /* VK_Player.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47686F491618FECC000C6FF5 /* VK_Player.xcdatamodeld */; };
+		47D76786161C394A00544325 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D76785161C394A00544325 /* AudioToolbox.framework */; };
+		47D76791161C403500544325 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D76790161C403500544325 /* CoreAudio.framework */; };
+		47D76793161C403B00544325 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D76792161C403B00544325 /* CoreAudioKit.framework */; };
+		47D76794161C404300544325 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47686F351618FECB000C6FF5 /* CoreData.framework */; };
+		47D76796161C406D00544325 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D76795161C406D00544325 /* QuartzCore.framework */; };
+		47D767A0161C4F2800544325 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7679F161C4F2800544325 /* AppController.m */; };
+		47D767A2161C515F00544325 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D767A1161C515F00544325 /* AVFoundation.framework */; };
+		47D767A6161C657000544325 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767A4161C657000544325 /* LoginViewController.m */; };
+		47D767A7161C657000544325 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D767A5161C657000544325 /* LoginViewController.xib */; };
+		47D767A9161C65F400544325 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D767A8161C65F400544325 /* WebKit.framework */; };
+		47D767B5161C862800544325 /* CommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767B4161C862800544325 /* CommonHelper.m */; };
+		47D767C5161CB65C00544325 /* Songs.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767C4161CB65C00544325 /* Songs.m */; };
+		47D767C9161CB69300544325 /* EntitySongs.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767C8161CB69300544325 /* EntitySongs.m */; };
+		47D767CC161CCCDD00544325 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767CB161CCCDD00544325 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		47D767D5161D37DB00544325 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D767D1161D37DB00544325 /* play.png */; };
+		47D767D6161D37DB00544325 /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D767D2161D37DB00544325 /* backward.png */; };
+		47D767D7161D37DB00544325 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D767D3161D37DB00544325 /* forward.png */; };
+		47D767D8161D37DB00544325 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D767D4161D37DB00544325 /* pause.png */; };
+		47D767E2161D616C00544325 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D767E1161D616C00544325 /* Carbon.framework */; };
+		47D767E7161D61B800544325 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767E5161D61B800544325 /* SPMediaKeyTap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		47D767F2161D61CA00544325 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767EE161D61CA00544325 /* NSObject+SPInvocationGrabbing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		47D76801161D6CA000544325 /* vkmusic.icns in Resources */ = {isa = PBXBuildFile; fileRef = 47D76800161D6CA000544325 /* vkmusic.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +49,39 @@
 		47686F3D1618FECB000C6FF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47686F3F1618FECB000C6FF5 /* VK Player-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VK Player-Prefix.pch"; sourceTree = "<group>"; };
 		47686F411618FECB000C6FF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		47686F431618FECB000C6FF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		47686F441618FECB000C6FF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47686F431618FECB000C6FF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "VK Player/AppDelegate.h"; sourceTree = "<group>"; };
+		47686F441618FECB000C6FF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "VK Player/AppDelegate.m"; sourceTree = "<group>"; };
 		47686F471618FECC000C6FF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		47686F4A1618FECC000C6FF5 /* VK_Player.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VK_Player.xcdatamodel; sourceTree = "<group>"; };
+		47D76785161C394A00544325 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		47D76790161C403500544325 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		47D76792161C403B00544325 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		47D76795161C406D00544325 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		47D7679E161C4F2800544325 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = "VK Player/AppController.h"; sourceTree = "<group>"; };
+		47D7679F161C4F2800544325 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = "VK Player/AppController.m"; sourceTree = "<group>"; };
+		47D767A1161C515F00544325 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		47D767A3161C657000544325 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		47D767A4161C657000544325 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		47D767A5161C657000544325 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		47D767A8161C65F400544325 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		47D767B3161C862800544325 /* CommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelper.h; sourceTree = "<group>"; };
+		47D767B4161C862800544325 /* CommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHelper.m; sourceTree = "<group>"; };
+		47D767C3161CB65C00544325 /* Songs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Songs.h; path = CoreData/Songs.h; sourceTree = "<group>"; };
+		47D767C4161CB65C00544325 /* Songs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Songs.m; path = CoreData/Songs.m; sourceTree = "<group>"; };
+		47D767C7161CB69300544325 /* EntitySongs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntitySongs.h; path = CoreData/Entity/EntitySongs.h; sourceTree = "<group>"; };
+		47D767C8161CB69300544325 /* EntitySongs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntitySongs.m; path = CoreData/Entity/EntitySongs.m; sourceTree = "<group>"; };
+		47D767CA161CCCDD00544325 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		47D767CB161CCCDD00544325 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		47D767D1161D37DB00544325 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		47D767D2161D37DB00544325 /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backward.png; sourceTree = "<group>"; };
+		47D767D3161D37DB00544325 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		47D767D4161D37DB00544325 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		47D767E1161D616C00544325 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		47D767E4161D61B800544325 /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMediaKeyTap.h; sourceTree = "<group>"; };
+		47D767E5161D61B800544325 /* SPMediaKeyTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMediaKeyTap.m; sourceTree = "<group>"; };
+		47D767ED161D61CA00544325 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
+		47D767EE161D61CA00544325 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
+		47D76800161D6CA000544325 /* vkmusic.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = vkmusic.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +89,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D767E2161D616C00544325 /* Carbon.framework in Frameworks */,
+				47D767A9161C65F400544325 /* WebKit.framework in Frameworks */,
+				47D767A2161C515F00544325 /* AVFoundation.framework in Frameworks */,
+				47D76796161C406D00544325 /* QuartzCore.framework in Frameworks */,
+				47D76794161C404300544325 /* CoreData.framework in Frameworks */,
+				47D76793161C403B00544325 /* CoreAudioKit.framework in Frameworks */,
+				47D76791161C403500544325 /* CoreAudio.framework in Frameworks */,
+				47D76786161C394A00544325 /* AudioToolbox.framework in Frameworks */,
 				47686F321618FECB000C6FF5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +107,13 @@
 		47686F221618FECB000C6FF5 = {
 			isa = PBXGroup;
 			children = (
-				47686F371618FECB000C6FF5 /* VK Player */,
+				47D767D0161D37CC00544325 /* Images */,
+				47686F431618FECB000C6FF5 /* AppDelegate.h */,
+				47686F441618FECB000C6FF5 /* AppDelegate.m */,
+				47D767C0161CB57000544325 /* Activity */,
+				47D767BF161CB56400544325 /* Additional */,
+				47D767BE161CB55900544325 /* CoreData */,
+				47686F381618FECB000C6FF5 /* Supporting Files */,
 				47686F301618FECB000C6FF5 /* Frameworks */,
 				47686F2E1618FECB000C6FF5 /* Products */,
 			);
@@ -65,6 +130,13 @@
 		47686F301618FECB000C6FF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47D767E1161D616C00544325 /* Carbon.framework */,
+				47D767A8161C65F400544325 /* WebKit.framework */,
+				47D767A1161C515F00544325 /* AVFoundation.framework */,
+				47D76785161C394A00544325 /* AudioToolbox.framework */,
+				47D76795161C406D00544325 /* QuartzCore.framework */,
+				47D76792161C403B00544325 /* CoreAudioKit.framework */,
+				47D76790161C403500544325 /* CoreAudio.framework */,
 				47686F311618FECB000C6FF5 /* Cocoa.framework */,
 				47686F331618FECB000C6FF5 /* Other Frameworks */,
 			);
@@ -81,18 +153,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		47686F371618FECB000C6FF5 /* VK Player */ = {
-			isa = PBXGroup;
-			children = (
-				47686F431618FECB000C6FF5 /* AppDelegate.h */,
-				47686F441618FECB000C6FF5 /* AppDelegate.m */,
-				47686F461618FECC000C6FF5 /* MainMenu.xib */,
-				47686F491618FECC000C6FF5 /* VK_Player.xcdatamodeld */,
-				47686F381618FECB000C6FF5 /* Supporting Files */,
-			);
-			path = "VK Player";
-			sourceTree = "<group>";
-		};
 		47686F381618FECB000C6FF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +163,99 @@
 				47686F401618FECB000C6FF5 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			path = "VK Player";
+			sourceTree = "<group>";
+		};
+		47D767BE161CB55900544325 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				47D767C6161CB67400544325 /* Songs */,
+				47686F491618FECC000C6FF5 /* VK_Player.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		47D767BF161CB56400544325 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				47D767E3161D61A300544325 /* SPKey */,
+				47D767B3161C862800544325 /* CommonHelper.h */,
+				47D767B4161C862800544325 /* CommonHelper.m */,
+				47D767CA161CCCDD00544325 /* AudioStreamer.h */,
+				47D767CB161CCCDD00544325 /* AudioStreamer.m */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
+		47D767C0161CB57000544325 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				47D767C2161CB58B00544325 /* Main */,
+				47D767C1161CB57600544325 /* Login */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		47D767C1161CB57600544325 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				47D767A3161C657000544325 /* LoginViewController.h */,
+				47D767A4161C657000544325 /* LoginViewController.m */,
+				47D767A5161C657000544325 /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		47D767C2161CB58B00544325 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				47D7679E161C4F2800544325 /* AppController.h */,
+				47D7679F161C4F2800544325 /* AppController.m */,
+				47686F461618FECC000C6FF5 /* MainMenu.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		47D767C6161CB67400544325 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				47D767C3161CB65C00544325 /* Songs.h */,
+				47D767C4161CB65C00544325 /* Songs.m */,
+				47D767C7161CB69300544325 /* EntitySongs.h */,
+				47D767C8161CB69300544325 /* EntitySongs.m */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
+		47D767D0161D37CC00544325 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47D76800161D6CA000544325 /* vkmusic.icns */,
+				47D767D1161D37DB00544325 /* play.png */,
+				47D767D2161D37DB00544325 /* backward.png */,
+				47D767D3161D37DB00544325 /* forward.png */,
+				47D767D4161D37DB00544325 /* pause.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		47D767E3161D61A300544325 /* SPKey */ = {
+			isa = PBXGroup;
+			children = (
+				47D767E9161D61CA00544325 /* SPInvocationGrabbing */,
+				47D767E4161D61B800544325 /* SPMediaKeyTap.h */,
+				47D767E5161D61B800544325 /* SPMediaKeyTap.m */,
+			);
+			name = SPKey;
+			sourceTree = "<group>";
+		};
+		47D767E9161D61CA00544325 /* SPInvocationGrabbing */ = {
+			isa = PBXGroup;
+			children = (
+				47D767ED161D61CA00544325 /* NSObject+SPInvocationGrabbing.h */,
+				47D767EE161D61CA00544325 /* NSObject+SPInvocationGrabbing.m */,
+			);
+			path = SPInvocationGrabbing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +312,12 @@
 				47686F3C1618FECB000C6FF5 /* InfoPlist.strings in Resources */,
 				47686F421618FECB000C6FF5 /* Credits.rtf in Resources */,
 				47686F481618FECC000C6FF5 /* MainMenu.xib in Resources */,
+				47D767A7161C657000544325 /* LoginViewController.xib in Resources */,
+				47D767D5161D37DB00544325 /* play.png in Resources */,
+				47D767D6161D37DB00544325 /* backward.png in Resources */,
+				47D767D7161D37DB00544325 /* forward.png in Resources */,
+				47D767D8161D37DB00544325 /* pause.png in Resources */,
+				47D76801161D6CA000544325 /* vkmusic.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +331,14 @@
 				47686F3E1618FECB000C6FF5 /* main.m in Sources */,
 				47686F451618FECB000C6FF5 /* AppDelegate.m in Sources */,
 				47686F4B1618FECC000C6FF5 /* VK_Player.xcdatamodeld in Sources */,
+				47D767A0161C4F2800544325 /* AppController.m in Sources */,
+				47D767A6161C657000544325 /* LoginViewController.m in Sources */,
+				47D767B5161C862800544325 /* CommonHelper.m in Sources */,
+				47D767C5161CB65C00544325 /* Songs.m in Sources */,
+				47D767C9161CB69300544325 /* EntitySongs.m in Sources */,
+				47D767CC161CCCDD00544325 /* AudioStreamer.m in Sources */,
+				47D767E7161D61B800544325 /* SPMediaKeyTap.m in Sources */,
+				47D767F2161D61CA00544325 /* NSObject+SPInvocationGrabbing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +367,7 @@
 				47686F471618FECC000C6FF5 /* en */,
 			);
 			name = MainMenu.xib;
+			path = "VK Player";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -265,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VK Player/VK Player-Prefix.pch";
 				INFOPLIST_FILE = "VK Player/VK Player-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -277,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VK Player/VK Player-Prefix.pch";
 				INFOPLIST_FILE = "VK Player/VK Player-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -301,6 +471,7 @@
 				47686F501618FECC000C6FF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -311,7 +482,8 @@
 				47686F4A1618FECC000C6FF5 /* VK_Player.xcdatamodel */,
 			);
 			currentVersion = 47686F4A1618FECC000C6FF5 /* VK_Player.xcdatamodel */;
-			path = VK_Player.xcdatamodeld;
+			name = VK_Player.xcdatamodeld;
+			path = "VK Player/VK_Player.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
