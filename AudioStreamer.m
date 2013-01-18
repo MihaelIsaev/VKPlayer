@@ -1961,6 +1961,11 @@ cleanup:
 }
 #endif
 
+-(void)setVolume:(float)volume
+{
+    AudioQueueSetParameter(audioQueue, kAudioQueueParam_Volume, volume);
+}
+
 @end
 
 

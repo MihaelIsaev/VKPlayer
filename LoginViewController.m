@@ -77,7 +77,7 @@
         // Получаем id пользователя, пригодится нам позднее
         NSArray *userAr = [urlString componentsSeparatedByString:@"&user_id="];
         NSString *user_id = [userAr lastObject];
-        //NSLog(@"User id: %@", user_id);
+        NSLog(@"User id: %@", user_id);
         if(user_id){
             [[NSUserDefaults standardUserDefaults] setObject:user_id forKey:@"VKAccessUserId"];
             [ad saveString:user_id :@"userId"];
@@ -109,4 +109,8 @@
     [window close];
 }
 
+- (IBAction)showLoginWindow:(id)sender
+{
+
+}
 @end

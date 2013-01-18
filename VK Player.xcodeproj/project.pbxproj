@@ -36,6 +36,12 @@
 		47D767E7161D61B800544325 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767E5161D61B800544325 /* SPMediaKeyTap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		47D767F2161D61CA00544325 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D767EE161D61CA00544325 /* NSObject+SPInvocationGrabbing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		47D76801161D6CA000544325 /* vkmusic.icns in Resources */ = {isa = PBXBuildFile; fileRef = 47D76800161D6CA000544325 /* vkmusic.icns */; };
+		47F56DB016225D4D00FA6837 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F56DAE16225D4D00FA6837 /* background@2x.jpg */; };
+		47F56DB116225D4D00FA6837 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F56DAF16225D4D00FA6837 /* background.jpg */; };
+		47F56DB91622725400FA6837 /* PlayProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F56DB81622725400FA6837 /* PlayProgress.m */; };
+		47F56DBC1622732900FA6837 /* PlaySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F56DBB1622732900FA6837 /* PlaySlider.m */; };
+		47F56DBF1622739C00FA6837 /* PlaySliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F56DBE1622739C00FA6837 /* PlaySliderCell.m */; };
+		47FC9E091622209400A3D252 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FC9E081622209400A3D252 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +88,16 @@
 		47D767ED161D61CA00544325 /* NSObject+SPInvocationGrabbing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPInvocationGrabbing.h"; sourceTree = "<group>"; };
 		47D767EE161D61CA00544325 /* NSObject+SPInvocationGrabbing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPInvocationGrabbing.m"; sourceTree = "<group>"; };
 		47D76800161D6CA000544325 /* vkmusic.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = vkmusic.icns; sourceTree = "<group>"; };
+		47F56DAE16225D4D00FA6837 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		47F56DAF16225D4D00FA6837 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		47F56DB71622725400FA6837 /* PlayProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayProgress.h; sourceTree = "<group>"; };
+		47F56DB81622725400FA6837 /* PlayProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayProgress.m; sourceTree = "<group>"; };
+		47F56DBA1622732900FA6837 /* PlaySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySlider.h; sourceTree = "<group>"; };
+		47F56DBB1622732900FA6837 /* PlaySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySlider.m; sourceTree = "<group>"; };
+		47F56DBD1622739C00FA6837 /* PlaySliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySliderCell.h; sourceTree = "<group>"; };
+		47F56DBE1622739C00FA6837 /* PlaySliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySliderCell.m; sourceTree = "<group>"; };
+		47FC9E071622209400A3D252 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		47FC9E081622209400A3D252 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +123,11 @@
 		47686F221618FECB000C6FF5 = {
 			isa = PBXGroup;
 			children = (
+				47D767BF161CB56400544325 /* Additional */,
 				47D767D0161D37CC00544325 /* Images */,
 				47686F431618FECB000C6FF5 /* AppDelegate.h */,
 				47686F441618FECB000C6FF5 /* AppDelegate.m */,
 				47D767C0161CB57000544325 /* Activity */,
-				47D767BF161CB56400544325 /* Additional */,
 				47D767BE161CB55900544325 /* CoreData */,
 				47686F381618FECB000C6FF5 /* Supporting Files */,
 				47686F301618FECB000C6FF5 /* Frameworks */,
@@ -183,6 +199,12 @@
 				47D767B4161C862800544325 /* CommonHelper.m */,
 				47D767CA161CCCDD00544325 /* AudioStreamer.h */,
 				47D767CB161CCCDD00544325 /* AudioStreamer.m */,
+				47F56DB71622725400FA6837 /* PlayProgress.h */,
+				47F56DB81622725400FA6837 /* PlayProgress.m */,
+				47F56DBA1622732900FA6837 /* PlaySlider.h */,
+				47F56DBB1622732900FA6837 /* PlaySlider.m */,
+				47F56DBD1622739C00FA6837 /* PlaySliderCell.h */,
+				47F56DBE1622739C00FA6837 /* PlaySliderCell.m */,
 			);
 			name = Additional;
 			sourceTree = "<group>";
@@ -212,6 +234,8 @@
 				47D7679E161C4F2800544325 /* AppController.h */,
 				47D7679F161C4F2800544325 /* AppController.m */,
 				47686F461618FECC000C6FF5 /* MainMenu.xib */,
+				47FC9E071622209400A3D252 /* Player.h */,
+				47FC9E081622209400A3D252 /* Player.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -230,6 +254,8 @@
 		47D767D0161D37CC00544325 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				47F56DAE16225D4D00FA6837 /* background@2x.jpg */,
+				47F56DAF16225D4D00FA6837 /* background.jpg */,
 				47D76800161D6CA000544325 /* vkmusic.icns */,
 				47D767D1161D37DB00544325 /* play.png */,
 				47D767D2161D37DB00544325 /* backward.png */,
@@ -318,6 +344,8 @@
 				47D767D7161D37DB00544325 /* forward.png in Resources */,
 				47D767D8161D37DB00544325 /* pause.png in Resources */,
 				47D76801161D6CA000544325 /* vkmusic.icns in Resources */,
+				47F56DB016225D4D00FA6837 /* background@2x.jpg in Resources */,
+				47F56DB116225D4D00FA6837 /* background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +367,10 @@
 				47D767CC161CCCDD00544325 /* AudioStreamer.m in Sources */,
 				47D767E7161D61B800544325 /* SPMediaKeyTap.m in Sources */,
 				47D767F2161D61CA00544325 /* NSObject+SPInvocationGrabbing.m in Sources */,
+				47FC9E091622209400A3D252 /* Player.m in Sources */,
+				47F56DB91622725400FA6837 /* PlayProgress.m in Sources */,
+				47F56DBC1622732900FA6837 /* PlaySlider.m in Sources */,
+				47F56DBF1622739C00FA6837 /* PlaySliderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

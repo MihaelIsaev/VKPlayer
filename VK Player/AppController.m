@@ -7,6 +7,8 @@
 //
 
 #import "AppController.h"
+#import "AudioStreamer.h"
+#import <QuartzCore/CoreAnimation.h>
 
 @implementation MediaKeyExampleApp
 - (void)sendEvent:(NSEvent *)theEvent
@@ -147,6 +149,7 @@ int songRow;
         }else if(isPlaying && !isPaused){
             isPlaying = NO;
             isPaused = YES;
+            [self cleanPlayedInProfileStatus];
             [theAudio pause];
             [playButton setImage:[NSImage imageNamed:@"play"]];
             [_currentSongTitle setStringValue:@""];
@@ -220,6 +223,7 @@ int songRow;
 -(void)didStopSong
 {
     [playButton setImage:[NSImage imageNamed:@"play"]];
+    [playbackTimer invalidate];
     playbackTimer = nil;
     [progressSlider setDoubleValue:.0f];
 }
@@ -329,6 +333,17 @@ int songRow;
         NSError* error;
         NSData *responseData = [NSData dataWithContentsOfURL: [NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/status.set?access_token=%@&audio=%@_%@&text=vkplayer", [ad retrieveString:@"accessToken"], [[_list objectAtIndex:songRow] valueForKey:@"owner_id"], [[_list objectAtIndex:songRow] valueForKey:@"aid"]]]];
         //NSData *responseData = [NSData dataWithContentsOfURL: [NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/status.set?access_token=%@&text=vkplayer", [ad retrieveString:@"accessToken"]]]];
+        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+        NSLog(@"status.set: %@", [json objectForKey:@"response"]);
+    });
+}
+
+-(void)cleanPlayedInProfileStatus
+{
+    dispatch_queue_t queue = dispatch_queue_create("com.mihaelisaev.VK-Player", NULL);
+    dispatch_async(queue, ^{
+        NSError* error;
+        NSData *responseData = [NSData dataWithContentsOfURL: [NSURL URLWithString:[NSString stringWithFormat:@"https://api.vk.com/method/status.set?access_token=%@", [ad retrieveString:@"accessToken"]]]];
         NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
         NSLog(@"status.set: %@", [json objectForKey:@"response"]);
     });

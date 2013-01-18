@@ -16,5 +16,6 @@
 
 @property (weak) IBOutlet WebView *webView;
 @property (unsafe_unretained) IBOutlet NSWindow *window;
+- (IBAction)showLoginWindow:(id)sender;
 
 @end
